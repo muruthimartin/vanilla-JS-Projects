@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://kit.fontawesome.com/1651ec3f63.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+    <title>Book list</title>
+</head>
+<body>
+    <div class="container mt-4">
+        <h1 class="display-4 text-center"><i class="fas fa-book-open text-success"></i><span class="text-success">Book</span>List</h1>
+        <form id="book-form">
+            <div class="form-group">
+                <label for="title">Title</label>
+                <input class="form-control" type="text" id="title">
+            </div>
+            <div class="form-group">
+                <label for="author">Author</label>
+                <input class="form-control" type="text" id="author">
+            </div>
+            <div class="form-group">
+                <label for="isbn">ISBN#</label>
+                <input class="form-control" type="text" id="isbn">
+            </div>
+            <input type="submit" class="btn btn-success btn-block text-center">
+        </form>
+        <table class="table table-striped mt-5">
+            <thead class="thead-dark ">
+                <tr>
+                    <th>Title</th>
+                    <th>Author</th>
+                    <th>ISBN#</th>
+                    <th>Delete</th>
+                </tr>
+            </thead>
+            <tbody id="book-list"></tbody>
+
+        </table>
+    </div>
+
+<script src="script.js" type="text/javascript"></script>
+</body>
+</html>
